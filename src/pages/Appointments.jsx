@@ -63,7 +63,7 @@ export default function Appointments() {
 
       let emailSent = false;
       try {
-        const response = await fetch("http://localhost:5000/api/send-appointment", {
+        const response = await fetch("/api/send-appointment", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(form)
